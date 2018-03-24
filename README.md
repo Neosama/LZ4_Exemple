@@ -1,2 +1,3 @@
 # LZ4_Exemple
-LZ4 Exemple
+
+Only Compress / Decompress char array with LZ4 algorithm.

@@ -11,7 +11,7 @@ int main()
 	char buff_compress[1024 * 4] = { 0 };
 	char buff_decompress[1024 * 4] = { 0 };
 
-	int compress_size = LZ4_compress_default(source, buff_compress, strlen(source), sizeof(buff_compress));
+	int compress_size = LZ4_compress_default(source, buff_compress, sizeof(source), sizeof(buff_compress));
 
 	int decompress_size = LZ4_decompress_safe(buff_compress, buff_decompress, compress_size, sizeof(buff_decompress));
 
